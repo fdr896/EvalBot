@@ -1,5 +1,7 @@
 # Run script
 run_bot.fish
+# Key file
+eval_bot-key.pem
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
