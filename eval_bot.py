@@ -1,8 +1,8 @@
 """Telegram bot who evals your messages"""
 
 import os
+import math # pylint: disable=unused-import
 import telebot
-import math
 
 TOKEN = os.environ["TOKEN"]
 bot = telebot.TeleBot(TOKEN, parse_mode=None)
