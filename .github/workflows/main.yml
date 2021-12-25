@@ -1,7 +1,8 @@
 name: check code
 on:
     push:
-    - tags: 'v*'
+        tags:
+        - 'v*'
 jobs:
     check-for-linting:
         runs-on: ubuntu-latest
