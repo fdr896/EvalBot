@@ -12,12 +12,6 @@ def send_hello(message):
 
     bot.reply_to(message, "Hello man")
 
-@bot.message_handler(commands=['secret'])
-def send_secret(message):
-    """Places secret message"""
-
-    bot.reply_to(message, "Secret command")
-
 @bot.message_handler(func = lambda m: True)
 def echo_all(message):
     """Evals received message"""
