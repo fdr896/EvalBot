@@ -13,7 +13,7 @@ def send_hello(message):
     bot.reply_to(message, "Hello man")
 
 @bot.message_handler(commands=['secret'])
-def send_hello(message):
+def send_secret(message):
     """Places secret message"""
 
     bot.reply_to(message, "Secret command")

@@ -3,7 +3,7 @@ on:
     release:
         types: [published]
 jobs:
-    check-job:
+    publish:
         runs-on: ubuntu-latest
         steps:
             - name: Check out the repo
