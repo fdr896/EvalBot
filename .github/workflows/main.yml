@@ -1,3 +1,4 @@
+name: check code
 on: [push]
 jobs:
     check-for-linting:
