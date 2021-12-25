@@ -1,3 +1,5 @@
+"""Telegram bot who evals your messages"""
+
 import os
 import telebot
 
