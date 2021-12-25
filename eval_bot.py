@@ -22,10 +22,10 @@ def send_secret(message):
 def echo_all(message):
     """Evals received message"""
 
-    message = message.replace("«", "'")
-    message = message.replace("»", "'")
+    text = message.text.replace("«", "'")
+    text = text.replace("»", "'")
     try:
-        result = eval(message.text) # pylint: disable=eval-used
+        result = eval(text) # pylint: disable=eval-used
         bot.reply_to(message, "Expression result is: " + str(result))
     except SyntaxError:
         bot.reply_to(message, "Your message does not satisfy python syntax!")
