@@ -1,3 +1,5 @@
+"""Tests for telegram EvalBot"""
+
 def echo_all(message):
     """Evals received message"""
 
@@ -10,8 +12,10 @@ def echo_all(message):
         return "Your message has an error in runtime or in 'compilation'!"
 
 def test_echo_all():
-	prefix = "Expression result is: "
+    """Test echo_all function"""
 
-	assert echo_all("1 + 3") == prefix + "4"
-	assert echo_all("test string") == "Your message does not satisfy python syntax!"
-	assert echo_all("1 // 0") == "Your message has an error in runtime or in 'compilation'!"
+    prefix = "Expression result is: "
+
+    assert echo_all("1 + 3") == prefix + "4"
+    assert echo_all("test string") == "Your message does not satisfy python syntax!"
+    assert echo_all("1 // 0") == "Your message has an error in runtime or in 'compilation'!"
