@@ -45,4 +45,6 @@ jobs:
         runs-on: ubuntu-latest
         needs: [check-for-linting, check-dockerfile, bot-functions-check]
         steps:
-            run: echo "check run"
+            - uses: actions/checkout@v2
+            - name: Check
+              run: echo check
