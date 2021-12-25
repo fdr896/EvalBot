@@ -4,4 +4,9 @@ on:
         types: [published]
 jobs:
     check-job:
-        - run: echo check
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+            - name: Check
+              run: echo Hello
