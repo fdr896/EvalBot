@@ -16,3 +16,9 @@ jobs:
             - name: Analysing the code with pylint
               run: |
                 pylint `ls -R |grep .py$ | xargs`
+    check-dockerfile:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Try build the Docker image
+              run: docker build . --file Dockerfile --tag eval-bot:$(date +%s)
