@@ -22,6 +22,8 @@ def send_secret(message):
 def echo_all(message):
     """Evals received message"""
 
+    message = message.replace("«", "'")
+    message = message.replace("»", "'")
     try:
         result = eval(message.text) # pylint: disable=eval-used
         bot.reply_to(message, "Expression result is: " + str(result))
