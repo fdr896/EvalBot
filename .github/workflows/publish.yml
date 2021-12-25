@@ -1,0 +1,4 @@
+name: Publish container to Docker Hub
+on:
+  release:
+    types: [published]
