@@ -2,6 +2,8 @@
 
 import os
 import math # pylint: disable=unused-import
+import numpy as np
+import sklearn
 import telebot
 
 TOKEN = os.environ["TOKEN"]

@@ -3,6 +3,8 @@ FROM python:3.8-slim-buster
 WORKDIR /app
 
 RUN pip3 install pyTelegramBotAPI
+RUN pip install numpy
+RUN pip install -U scikit-learn
 
 COPY ./eval_bot.py /app/eval_bot.py
 
